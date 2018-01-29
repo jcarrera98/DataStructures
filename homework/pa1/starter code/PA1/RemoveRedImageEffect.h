@@ -13,7 +13,8 @@ class RemoveRedImageEffect : public ImageEffect
         {
             for (int j = 0; j < doc.getWidth(); j++)
             {
-                //PA1 TODO: implement!
+				Pixel& p = doc.getPixel(i, j);
+				p.setRed(0);
             }
         }
     }
